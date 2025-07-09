@@ -42,12 +42,12 @@ function App() {
 
   return (
         <div className="text-xl">
-          <div className="min-h-screen flex items-center justify-center bg-gray-500 py-10 w-screen">
-            <div className="bg-gray-200 rounded-2xl shadow-2xl px-6 py-10 w-90">
+          <div className="min-h-screen flex items-center justify-center bg-gray-500 py-10 px-10 lg:px-0 w-screen">
+            <div className="bg-gray-200 rounded-2xl shadow-2xl px-6 lg:py-10 py-5 w-90">
               <div className="text-right text-white text-4xl mb-4 px-4 py-8 bg-gray-900 rounded-xl font-mono break-words min-h-[3rem]">
                 {input}
               </div>
-              <div className="grid grid-cols-4 gap-4">
+              <div className="grid grid-cols-4 gap-3">
                 <button
                   className="col-span-2 text-white bg-gray-700 p- rounded-xl"
                   onClick={handleClear}
@@ -61,7 +61,7 @@ function App() {
                   .
                 </button>
                 <button
-                  className="bg-orange-400 text-3xl text-gray-900 p-4 rounded-xl"
+                  className="bg-orange-400 lg:text-3xl text-gray-900 p-4 rounded-xl"
                   onClick={() => handleOperator("/")}
                 >
                   ÷
@@ -76,7 +76,7 @@ function App() {
                   </button>
                 ))}
                 <button
-                  className="bg-orange-400 text-gray-900 text-3xl p-4 rounded-xl"
+                  className="bg-orange-400 text-gray-900 lg:text-3xl p-4 rounded-xl"
                   onClick={() => handleOperator("*")}
                 >
                   ×
@@ -91,7 +91,7 @@ function App() {
                   </button>
                 ))}
                 <button
-                  className="bg-orange-400 text-gray-900 p-4 text-3xl rounded-xl"
+                  className="bg-orange-400 text-gray-900 p-4 lg:text-3xl rounded-xl"
                   onClick={() => handleOperator("-")}
                 >
                   −
@@ -106,7 +106,7 @@ function App() {
                   </button>
                 ))}
                 <button
-                  className="bg-orange-400 text-gray-900 text-3xl p-4 rounded-xl"
+                  className="bg-orange-400 text-gray-900 lg:text-3xl p-4 rounded-xl"
                   onClick={() => handleOperator("+")}
                 >
                   +
@@ -118,7 +118,7 @@ function App() {
                   0
                 </button>
                 <button
-                  className="bg-orange-400 col-span-2 text-gray-900 text-3xl p-4 rounded-xl"
+                  className="bg-orange-400 col-span-2 text-gray-900 lg:text-3xl p-4 rounded-xl"
                   onClick={handleEquals}
                 >
                   =
