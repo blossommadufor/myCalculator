@@ -43,7 +43,10 @@ function App() {
   return (
         <div className="text-xl">
           <div className="min-h-screen flex items-center justify-center bg-gray-500 py-10 px-10 lg:px-0 w-screen">
-            <div className="bg-gray-200 rounded-2xl shadow-2xl px-6 lg:py-10 py-5 w-90">
+            <div className="bg-gray-200 rounded-2xl shadow-2xl px-6 lg:py-10 py-5 w-90 ">
+            <div className="text-right pb-2">
+              <p className="font-semibold text-xl lg:text-3xl">S.A.D 8</p>
+            </div>
               <div className="text-right text-white text-4xl mb-4 px-4 py-8 bg-gray-900 rounded-xl font-mono break-words min-h-[3rem]">
                 {input}
               </div>
